@@ -30,3 +30,9 @@ hr {
 .garanties{
     max-width: 720px;
 }
+
+.myCarousel {
+    margin: auto;
+    width:340px;
+    height:260px;
+  }

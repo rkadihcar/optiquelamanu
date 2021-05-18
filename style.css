@@ -6,3 +6,11 @@ body {
 h1, h2 {
     color: #13a89e;
 }
+
+.carousel-caption {
+    background: rgba(235, 247, 248, 0.5);
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 10px 0;
+}

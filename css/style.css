@@ -1,0 +1,32 @@
+body {
+    font-family: font-family: 'Spartan', sans-serif;
+    font-weight:400;
+}
+
+h1, h2, .first-color {
+    color: #13a89e;
+}
+
+.carousel-caption {
+    background: rgba(235, 247, 248, 0.5);
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 10px 0;
+}
+.second-color  {
+    color:#ed126a
+}
+.bg-first-color {
+    background-color:#13a89e
+} 
+.bg-second-color {
+    background-color:#ed126a
+}
+hr {
+    width:20%; 
+    margin: 50px auto;
+}
+.garanties{
+    max-width: 720px;
+}

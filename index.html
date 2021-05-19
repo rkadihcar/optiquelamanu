@@ -4,33 +4,84 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" cogntent="width=device-width, initial-scale=1.0">
-<!-- CSS only -->
+<!-- CSS bootstrap  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- CSS fontawesome  -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- google fonts  -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;600&display=swap" rel="stylesheet">
+<!-- style du site  -->
 <link rel="stylesheet" href="css/style.css">
 <title>Optique Lamanu - Magasin d'optique : lunettes, lentilles et lunettes de soleil"</title>
 <meta name="description" content="Optic Lamanu, l'expert en lunetterie proche de chez vous et acteur incontournable de l'optique">
 <meta name="robots" content="INDEX,FOLLOW">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!-- favicon  -->
+<link rel="icon" href="img/favicon.gif" sizes="32x32" />
+<!-- js 2 carussels  -->
+<script>
+	/* 1 carousel */
+	$('#carousel-1').carousel({
+		  interval: 1000,
+		  wrap: true,
+		  keyboard: true,
+		  touch:true,
+		  ride:true,
+		  pause:false
+	 });	 	 
+	 /* 2 carousel */
+	 $('#carousel-2').carousel({
+		  interval: 3000,
+		  wrap: true,
+		  keyboard: true,
+		  touch:true,
+		  ride:true,
+		  pause:true
+	 });
+	</script>
 </head>
 <body>
+	<!-- header -->
+	<header class="navigation">
+	<nav class="navbar navbar-expand-lg navbar-light ">
+		<div class="container">
+		  <a title="Page d'accueil" class="navbar-brand" href="index.html"><img class="logo" src="img/logo.gif" alt="Logo optique Lamanu"></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+			<ul class="navbar-nav"  >			  
+			  <li class="nav-item p-2">
+				<a title="Page Lunettes de vue" class="nav-link fs-4" href="lunettes-de-vue.html">Lunettes de vue</a>
+			  </li>
+			  <li class="nav-item p-2">
+				<a title="Page Lunettes de soleil" class="nav-link fs-4" href="lunettes-de-soleil.html">Lunettes de soleil</a>
+			  </li>
+			  <li class="nav-item p-2">
+				<a title="Page Contact" class="nav-link fs-4" href="contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	  </header><!-- end header -->
+	
 <main class="home container mt-3 mb-3 ">
 <!-- Carrousel des images home-->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-indicators">
-		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
 	</div>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
 			<img src="img/slider1.jpg" class="d-block w-100" alt="Boutique">
-			<div class="carousel-caption d-none d-md-block text-dark">
+			<div class="carousel-caption d-none d-md-block text-dark ">
 				<strong class="fs-3">Nouvelle Boutique</strong>
 				<p class="fs-4">
-					Lorem ipsum dolor sit amet.
+					Découvrir la nouvelle boutique à Versalles.
 				</p>
 			</div>
 		</div>
@@ -39,7 +90,7 @@
 			<div class="carousel-caption d-none d-md-block text-dark">
 				<strong class="fs-3">Offre de la semaine</strong>
 				<p class="fs-4">
-					Lorem ipsum dolor sit amet.
+					Les offres en lunettes de soleil pour l'été.
 				</p>
 			</div>
 		</div>
@@ -53,46 +104,51 @@
 			</div>
 		</div>
 	</div>
-	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+	<button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
 	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	<span class="visually-hidden">Previous</span>
 	</button>
-	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+	<button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 	<span class="visually-hidden">Next</span>
 	</button>
 </div>
 <!-- presentation-->
-<div class="presentation-home container text-center pt-5 pb-5">
+<div class="presentation-home container text-center p-5 ">
 	<h1 class="pb-3 first-color">Optique Lamanu</h1>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<p class="fs-5">
+		Plus de 50 ans de professionnalisme et de savoir-faire, 12 magasins en France et des centaines de produits d'optique.<br>
+		Nous croyons en la beauté et le bien-être visuel accessibles à tous.<br>
+	</p>
+    <p class="second-color fs-3">Optique Lamanu, c'est un engagement : Vous allez vous aimer ! 
 	</p>
 </div>
 <!-- produits-->
-<div class="produits-home container text-center pb-5">
-	<h2 class="pb-3 first-color">Vous cherchez plutôt?</h2>
+<div class="produits-home container text-center pb-5 ">
+	<h2 class="pb-3 first-color mb-4">Vous cherchez plutôt?</h2>
 	<div class="row">
 		<div class="col-6 position-relative">
 			<a title="Lunettes de vue" class="text-decoration-none" href="#">
 			<img src="img/produit-home-1.jpg" class="d-block w-100" alt="Lunettes de vue">
-			<h2 class="text-center  p-3 fs-4 first-color">Lunettes de vue</h2>
 			</a>
+			<h2 class="text-center  p-3 fs-4 first-color">Nouvelle collection Lunettes de vue</h2>
+			<a class="btn bg-second-color text-white fs-5" href="lunettes-de-vue.html" role="button">Découvrir</a>
 		</div>
 		<div class="col-6 position-relative">
 			<a title="Lunettes de soleil" class="text-decoration-none" href="#">
-			<img src="img/produit-home-2.jpg" class="d-block w-100" alt="Tendances et accessibles">
-            <h2 class="text-center  p-3 fs-4 first-color">Lunettes de soleil</h2>
-			</a>
+			<img src="img/produit-home-2.jpg" class="d-block w-100" alt="Tendances et accessibles"></a>
+            <h2 class="text-center  p-3 fs-4 first-color">Nouvelle collection  Lunettes de soleil</h2>			
+			<a class="btn bg-second-color text-white fs-5" href="lunettes-de-soleil.html" role="button">Découvrir</a>
 		</div>
 	</div>
 </div>
+
 <!-- marques-->
 <div class="marques text-center">
 	<h2 class=" first-color mb-3">À vos marques</h2>
 	 <!-- carrousel logos-->
-     <div class="myCarousel ">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+     
+        <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="marques/boss.png" class="d-block w-100" alt="Boss">
@@ -128,32 +184,23 @@
                     <img src="marques/rayban.png" class="d-block w-100" alt=".Ray Ban">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        
+      
     </div>
 
      <!-- end carrousel logos-->
     
-
-
 </div>
 <hr class="bg-second-color">
 <!-- avis-->
@@ -195,7 +242,7 @@
 <!-- end avis-->
 <hr class="bg-second-color">
 <!-- garanties + qualité -->
-<div class="garanties m-auto">
+<div class="garanties m-auto mb-5">
 	<div class="container row text-center">
 		<div class="col-sm-6">
             <div class="bg-second-color p-3 m-2">
@@ -260,5 +307,6 @@
 </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

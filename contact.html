@@ -1,89 +1,141 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formulaire de contact</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" cogntent="width=device-width, initial-scale=1.0">
+    <!-- CSS bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- CSS fontawesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;600&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;600&display=swap" rel="stylesheet">
+    <!-- style du site  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Optique Lamanu - Magasin d'optique : lunettes, lentilles et lunettes de soleil"</title>
+    <meta name="description"
+        content="Optic Lamanu, l'expert en lunetterie proche de chez vous et acteur incontournable de l'optique">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- favicon  -->
+    <link rel="icon" href="img/favicon.gif" sizes="32x32" />
+    <!-- js 2 carussels  -->
+    <script>
+        /* 1 carousel */
+        $('#carousel-1').carousel({
+            interval: 1000,
+            wrap: true,
+            keyboard: true,
+            touch: true,
+            ride: true,
+            pause: false
+        });
+        /* 2 carousel */
+        $('#carousel-2').carousel({
+            interval: 3000,
+            wrap: true,
+            keyboard: true,
+            touch: true,
+            ride: true,
+            pause: true
+        });
+    </script>
 </head>
-    <!--/header-->
-    <header class="navbar navbar-expand-md">
-        <a href="/acueil.html" class="navbar-brand">
-            <img src="img/logo.gif" alt="logo Optic La Manu">
-        </a>
-        <a href="/acueil.html"><span class="navbar-text text-primary h2">Optic La Manu</span></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="/acueil.html" class="nav-link">Acueil</a></li>
-                <li class="nav-item"><a href="/lunettedevue.html" class="nav-link">Lunette de Vue</a></li>
-                <li class="nav-item"><a href="/lunettedesoleil.html" class="nav-link">Lunette de Soleil</a></li>
-                <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
-            </ul>
+<!-- header -->
+<header class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a title="Page d'accueil" class="navbar-brand" href="index.html"><img class="logo" src="/assets/img/logo.gif"
+                    alt="Logo optique Lamanu"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                        <a title="Page Lunettes de vue" class="nav-link fs-4" href="lunettes-de-vue.html">Lunettes de
+                            vue</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a title="Page Lunettes de soleil" class="nav-link fs-4" href="lunettes-de-soleil.html">Lunettes
+                            de soleil</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a title="Page Contact" class="nav-link fs-4" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header><!--/header-->
-    <main class="big-boy container-fluid ">
-        <section class="row my-4 justify-content-between p-5" >
-            <section class="col-12 col-md-3 ">
-                <h1 class="h3">Nous contacter</h1>
-                <div class="">
+    </nav>
+</header><!-- end header -->
+
+<main class="mt-5">
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md ">
+                <!-- nous contacter -->
+                <div class="col-6 ">
+                    <h1 class="h3">Nous contacter</h1>
                     <span>
                         <b>Horaires D'ouverture</b>
                     </span>
-                   </div>
-                <div>
-                    <dt day="0">Lundi - vendredi</dt>
-                    <dd>
-                        <time>10:00</time>
-                        -
-                        <time>19:00</time>
-                     </dd>
+                    <div>
+                        <dt day="0">Lundi - vendredi</dt>
+                        <dd>
+                            <time>10:00</time>
+                            -
+                            <time>19:00</time>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt day="5">Samedi</dt>
+                        <dd>
+                            <time>10:00</time>
+                            -
+                            <time>13:00</time>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt day="6">Dimanche</dt>
+                        <dd>Fermé(e)</dd>
+                    </div>
+                    <p>
+                       <strong> Téléphone :</strong> <br> 01 02 03 04 05
+                    </p>
+                    <img src="/assets/img/img-contact.jpg" class="img-thumbnail m-3 " alt="">
                 </div>
-                <div>
-                    <dt day="5">Samedi</dt>
-                    <dd>
-                        <time>10:00</time>
-                        - 
-                        <time>13:00</time>
-                    </dd>
-                 </div>
-                 <div>
-                     <dt day="6">Dimanche</dt>
-                     <dd>Fermé(e)</dd>
-                  </div>
+
             </div>
-        </div>
-            </section><!--/First Colonne-->
-            <section class="col-12 col-md-8 rounded ml-1">
+            <!--End nous contacter -->
+            <!-- image -->
+
+            <div class="col-md">
+                <!-- form contact  -->
                 <form action="">
                     <h1 class="h3">Formulaire de contact</h1>
                     <fieldset>
                         <legend>Informations personnelles</legend>
-                        <!--First Name-->
                         <div class="form-group">
                             <label for="fName">Votre prénom</label>
-                            <input type="text" name="fName" id="fName" class="form-control" placeholder="Votre prénom" />
+                            <input type="text" name="fName" id="fName" class="form-control"
+                                placeholder="Votre prénom" />
                         </div>
-                        <!--/First Name-->
-                        <!--Last Name-->
                         <div class="form-group">
                             <label for="lName">Votre nom de famille</label>
-                            <input type="text" name="lName" id="lName" class="form-control" placeholder="Votre nom de famille" />
+                            <input type="text" name="lName" id="lName" class="form-control"
+                                placeholder="Votre nom de famille" />
                         </div>
-                        <!--/Last Name-->
-                        <!--Email-->
                         <div class="form-group">
                             <label for="email">Votre adresse email</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse email" />
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Votre adresse email" />
                         </div>
-                        <!--/Email-->
-                        <!--Country-->
                         <div class="form-group">
                             <label for="country">Objet</label>
                             <select name="country" id="country" class="form-control">
@@ -93,32 +145,86 @@
                                 <option value="D3">Demande devis</option>
                             </select>
                         </div>
-                        <!--/Country-->
                     </fieldset>
-                   
-                    <fieldset>
+
+                    <fieldset >
                         <legend>Votre message</legend>
-                        <!--Message-->
                         <div class="form-group">
-                            <textarea name="messsage" id="messsage" rows="5" class="form-control"></textarea>
+                            <textarea name="messsage" id="messsage" rows="5" class="form-control text"></textarea>
                         </div>
-                        <!--/Message-->
                     </fieldset>
-                    <!--Submit-->
                     <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <button type="button" class="btn btn-outline-info">Envoyer !</button><!--Submit-->
+                        <div class="col mt-2 mb-5">
+                            <button type="button" class="btn btn-outline-info">Envoyer !</button>
                         </div>
                     </div>
                 </form>
-            <div>
-            </section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.474048872367!2d2.14952090000001!3d48.79193050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d357a4f94bf%3A0x705dd1d7cad8e323!2sLa%20Manu%20-%20Ecole%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1621348991254!5m2!1sfr!2sfr" width="1200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
             </div>
-    </main>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!--End Form contact -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.474048872367!2d2.14952090000001!3d48.79193050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d357a4f94bf%3A0x705dd1d7cad8e323!2sLa%20Manu%20-%20Ecole%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1621348991254!5m2!1sfr!2sfr"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    </section>
+</main>
+
+<footer class=" text-center bg-first-color">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <nav class="menu-bottom">
+                    <ul class="list-unstyled mt-3">
+                        <li class="d-md-inline">
+                            <a class="link-light text-decoration-none p-3" href="#">
+                                Contact</a>
+                        </li>
+                        <li class="d-md-inline">
+                            <a class="link-light text-decoration-none p-3" href="#">
+                                Mentions légales</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-6">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-floating m-1 link-light " href="#" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="btn btn-floating m-1 link-light " href="#" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-floating m-1 link-light " href="#" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="btn btn-floating m-1 link-light " href="#" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+        </div>
+        <!-- end row-->
+    </div>
+    <!-- Grid container -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

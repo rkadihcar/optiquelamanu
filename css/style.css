@@ -40,3 +40,9 @@ hr {
     width:340px;
     height:260px;
   }
+
+/* ***************CSS CONTACT ***************/
+
+.text{
+    resize: none;
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;600&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css"> 
+</head>
+    <!--/header-->
+    <header class="navbar navbar-expand-md">
+        <a href="/acueil.html" class="navbar-brand">
+            <img src="img/logo.gif" alt="logo Optic La Manu">
+        </a>
+        <a href="/acueil.html"><span class="navbar-text text-primary h2">Optic La Manu</span></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="/acueil.html" class="nav-link">Acueil</a></li>
+                <li class="nav-item"><a href="/lunettedevue.html" class="nav-link">Lunette de Vue</a></li>
+                <li class="nav-item"><a href="/lunettedesoleil.html" class="nav-link">Lunette de Soleil</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header><!--/header-->
+    <main class="big-boy container-fluid ">
+        <section class="row my-4 justify-content-between p-5" >
+            <section class="col-12 col-md-3 ">
+                <h1 class="h3">Nous contacter</h1>
+                <div class="">
+                    <span>
+                        <b>Horaires D'ouverture</b>
+                    </span>
+                   </div>
+                <div>
+                    <dt day="0">Lundi - vendredi</dt>
+                    <dd>
+                        <time>10:00</time>
+                        -
+                        <time>19:00</time>
+                     </dd>
+                </div>
+                <div>
+                    <dt day="5">Samedi</dt>
+                    <dd>
+                        <time>10:00</time>
+                        - 
+                        <time>13:00</time>
+                    </dd>
+                 </div>
+                 <div>
+                     <dt day="6">Dimanche</dt>
+                     <dd>Fermé(e)</dd>
+                  </div>
+            </div>
+        </div>
+            </section><!--/First Colonne-->
+            <section class="col-12 col-md-8 rounded ml-1">
+                <form action="">
+                    <h1 class="h3">Formulaire de contact</h1>
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                        <!--First Name-->
+                        <div class="form-group">
+                            <label for="fName">Votre prénom</label>
+                            <input type="text" name="fName" id="fName" class="form-control" placeholder="Votre prénom" />
+                        </div>
+                        <!--/First Name-->
+                        <!--Last Name-->
+                        <div class="form-group">
+                            <label for="lName">Votre nom de famille</label>
+                            <input type="text" name="lName" id="lName" class="form-control" placeholder="Votre nom de famille" />
+                        </div>
+                        <!--/Last Name-->
+                        <!--Email-->
+                        <div class="form-group">
+                            <label for="email">Votre adresse email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse email" />
+                        </div>
+                        <!--/Email-->
+                        <!--Country-->
+                        <div class="form-group">
+                            <label for="country">Objet</label>
+                            <select name="country" id="country" class="form-control">
+                                <option value="0">--Choisissez l'objet de votre message --</option>
+                                <option value="D1">Demande d'information générale</option>
+                                <option value="D2">Demande d'information tarifaire</option>
+                                <option value="D3">Demande devis</option>
+                            </select>
+                        </div>
+                        <!--/Country-->
+                    </fieldset>
+                   
+                    <fieldset>
+                        <legend>Votre message</legend>
+                        <!--Message-->
+                        <div class="form-group">
+                            <textarea name="messsage" id="messsage" rows="5" class="form-control"></textarea>
+                        </div>
+                        <!--/Message-->
+                    </fieldset>
+                    <!--Submit-->
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <button type="button" class="btn btn-outline-info">Envoyer !</button><!--Submit-->
+                        </div>
+                    </div>
+                </form>
+            <div>
+            </section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.474048872367!2d2.14952090000001!3d48.79193050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67d357a4f94bf%3A0x705dd1d7cad8e323!2sLa%20Manu%20-%20Ecole%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1621348991254!5m2!1sfr!2sfr" width="1200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>

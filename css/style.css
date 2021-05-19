@@ -1,3 +1,4 @@
+/* ***************CSS COMMUN***************/
 body {
     font-family: font-family: 'Spartan', sans-serif;
     font-weight:400;
@@ -6,13 +7,8 @@ body {
 h1, h2, .first-color {
     color: #13a89e;
 }
-
-.carousel-caption {
-    background: rgba(235, 247, 248, 0.5);
-    left:0;
-    right:0;
-    bottom:0;
-    padding: 10px 0;
+.logo {
+    width: 200px;
 }
 .second-color  {
     color:#ed126a
@@ -27,11 +23,19 @@ hr {
     width:20%; 
     margin: 50px auto;
 }
+/* ***************CSS HOME ***************/
+.carousel-caption {
+    background: rgba(181, 217, 215, 0.7);
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 10px 0;
+}
 .garanties{
     max-width: 720px;
 }
-
-.myCarousel {
+/* caroussel home marques*/ 
+#carousel-2 {
     margin: auto;
     width:340px;
     height:260px;
